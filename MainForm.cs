@@ -1565,7 +1565,7 @@ namespace XSDDiagram
                     XmlReaderSettings settings = new XmlReaderSettings();
                     settings.CloseInput = true;
                     settings.ValidationType = ValidationType.Schema;
-                    settings.ProhibitDtd = false;
+                    settings.DtdProcessing = DtdProcessing.Ignore;
 					settings.XmlResolver = null;
                     settings.ValidationEventHandler += new ValidationEventHandler(ValidationHandler);
                     settings.ValidationFlags = XmlSchemaValidationFlags.ReportValidationWarnings |
